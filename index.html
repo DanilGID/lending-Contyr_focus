@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контур.Фокус - Анализ рисков для бизнеса</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt me-2"></i>Контур.Фокус
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Возможности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#advantages">Преимущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Тарифы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light ms-lg-3" id="demoBtn">Заказать демо</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Защитите свой бизнес от рисков</h1>
+                    <p class="lead mb-4">Контур.Фокус — аналитический сервис для комплексной оценки рисков в бизнесе. Оберегаем от ненадежных контрагентов и помогаем соблюдать законодательство.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary btn-lg">Попробовать бесплатно</button>
+                        <button class="btn btn-outline-primary btn-lg">Подробнее</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="img/Снимок экрана 2025-06-17 в 19.29.57.png"  alt="Контур.Фокус интерфейс" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Блок с логотипами клиентов -->
+    <!-- <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-2 text-center">
+                    <img src="https://via.placeholder.com/120x60" alt="Логотип клиента" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="https://via.placeholder.com/120x60" alt="Логотип клиента" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="https://via.placeholder.com/120x60" alt="Логотип клиента" class="img-fluid grayscale">
+                </div>
+                <div class="col-6 col-md-2 text-center">
+                    <img src="https://via.placeholder.com/120x60" alt="Логотип клиента" class="img-fluid grayscale">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Возможности -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Возможности сервиса</h2>
+                <p class="text-muted">Все, что нужно для защиты вашего бизнеса</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-search-dollar fa-3x text-primary"></i>
+                            </div>
+                            <h5>Проверка контрагентов</h5>
+                            <p class="text-muted">Выявляйте ненадежных партнеров до заключения сделки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-balance-scale fa-3x text-primary"></i>
+                            </div>
+                            <h5>Судебные риски</h5>
+                            <p class="text-muted">Анализ судебных дел и исков к контрагентам</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-chart-line fa-3x text-primary"></i>
+                            </div>
+                            <h5>Финансовый анализ</h5>
+                            <p class="text-muted">Оценка финансового состояния компаний</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-gavel fa-3x text-primary"></i>
+                            </div>
+                            <h5>Контроль законодательства</h5>
+                            <p class="text-muted">Следите за изменениями в законах</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section id="advantages" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/successful-businessman-office-leading-group_252847-176.jpg.avif" alt="Преимущества Контур.Фокус" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Почему выбирают Контур.Фокус</h2>
+                    <div class="advantage-item d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Надежность</h5>
+                            <p class="text-muted">Работаем с 2010 года, доверяют 500 000+ компаний</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Полнота данных</h5>
+                            <p class="text-muted">Доступ к 50+ источникам информации</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item d-flex mb-3">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Простота использования</h5>
+                            <p class="text-muted">Интуитивно понятный интерфейс</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item d-flex">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Поддержка 24/7</h5>
+                            <p class="text-muted">Наши эксперты всегда готовы помочь</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Тарифные планы</h2>
+                <p class="text-muted">Выберите подходящий вариант для вашего бизнеса</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white text-center py-4">
+                            <h4 class="fw-bold">Старт</h4>
+                            <div class="price display-4 fw-bold">₽9 900</div>
+                            <small class="text-muted">в месяц</small>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 100 проверок в месяц</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Базовые отчеты</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Электронная подпись</li>
+                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i> Анализ конкурентов</li>
+                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i> Персональный менеджер</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Выбрать тариф</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h4 class="fw-bold">Бизнес</h4>
+                            <div class="price display-4 fw-bold">₽24 900</div>
+                            <small>в месяц</small>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 500 проверок в месяц</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Расширенные отчеты</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Электронная подпись</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Анализ конкурентов</li>
+                                <li class="mb-2"><i class="fas fa-times text-danger me-2"></i> Персональный менеджер</li>
+                            </ul>
+                            <button class="btn btn-primary w-100">Выбрать тариф</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-white text-center py-4">
+                            <h4 class="fw-bold">Премиум</h4>
+                            <div class="price display-4 fw-bold">₽49 900</div>
+                            <small class="text-muted">в месяц</small>
+                        </div>
+                        <div class="card-body p-4">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Неограниченные проверки</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Полные отчеты</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Электронная подпись</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Анализ конкурентов</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Персональный менеджер</li>
+                            </ul>
+                            <button class="btn btn-outline-primary w-100">Выбрать тариф</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Отзывы клиентов</h2>
+                <p class="text-muted">Что говорят о нас наши клиенты</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mb-4">"Сервис помог избежать сделки с компанией-однодневкой. Сэкономили более 2 млн рублей!"</p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img src="https://via.placeholder.com/50" alt="Фото клиента" class="rounded-circle me-3"> -->
+                                <div>
+                                    <h6 class="mb-0">Иван Петров</h6>
+                                    <small class="text-muted">Директор ООО "ТехноПром"</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="mb-4">"Удобный интерфейс и полная информация о контрагентах. Используем ежедневно."</p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img src="https://via.placeholder.com/50" alt="Фото клиента" class="rounded-circle me-3"> -->
+                                <div>
+                                    <h6 class="mb-0">Елена Смирнова</h6>
+                                    <small class="text-muted">Финансовый директор АО "СтройГарант"</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="mb-4">"Отличный инструмент для анализа рынка. Помог найти новых надежных поставщиков."</p>
+                            <div class="d-flex align-items-center">
+                                <!-- <img src="https://via.placeholder.com/50" alt="Фото клиента" class="rounded-circle me-3"> -->
+                                <div>
+                                    <h6 class="mb-0">Алексей Козлов</h6>
+                                    <small class="text-muted">Коммерческий директор ИП "ТоргСервис"</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Готовы защитить свой бизнес?</h2>
+            <p class="lead mb-5">Попробуйте Контур.Фокус бесплатно в течение 14 дней</p>
+            <button class="btn btn-light btn-lg px-5">Начать бесплатный период</button>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Свяжитесь с нами</h2>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-4">Контактная информация</h5>
+                            <div class="contact-item d-flex mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h6>Адрес</h6>
+                                    <p class="text-muted mb-0">г. Санкт-Петербург, Московское шоссе д.42 к.2 литер А, помещение 1-H, ком. 62</p>
+                                </div>
+                            </div>
+                            <div class="contact-item d-flex mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h6>Телефон</h6>
+                                    <p class="text-muted mb-0">8 800 500-16-44</p>
+                                </div>
+                            </div>
+                            <!-- <div class="contact-item d-flex mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h6>Email</h6>
+                                    <p class="text-muted mb-0">info@kontur-focus.ru</p>
+                                </div>
+                            </div> -->
+                            <div class="contact-item d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h6>Часы работы</h6>
+                                    <p class="text-muted mb-0">Пн-Пт: 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-shield-alt fa-2x text-primary me-2"></i>
+                        <span class="fs-5 fw-bold">Контур.Фокус</span>
+                    </div>
+                    <small class="text-muted">Аналитический сервис для бизнеса</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <small class="text-muted">© 1988–2025 СКБ Контур</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Кастомный JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
